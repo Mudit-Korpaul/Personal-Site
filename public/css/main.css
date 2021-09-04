@@ -4,6 +4,19 @@ html {
   scroll-behavior: smooth;
   height: 100%;
 }
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cta-inp {
+  width: 50%;
+}
+.inp {
+  margin: 1.5em auto;
+}
+
 #one,
 #two {
   overflow: hidden;
@@ -85,10 +98,12 @@ body > .slider {
   from {
     transform: translate3d(0, 100%, 0);
     visibility: visible;
+    opacity: 0;
   }
 
   to {
     transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 @keyframes fadeInUp {
@@ -631,8 +646,16 @@ pre code {
   #one {
     margin-bottom: 50px !important;
   }
-  body{
-    text-align:justify;
+  body {
+    text-align: justify !important;
+  }
+  #two p,
+  #three p {
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important;
+  }
+  .cta-inp {
+    width: 110%;
   }
 }
 
