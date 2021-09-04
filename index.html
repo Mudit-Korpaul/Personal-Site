@@ -156,7 +156,7 @@
           </div>
           <div
             data-aos="flip-left"
-            data-aos-delay="450"
+            data-aos-delay="350"
             class="col-4 col-12-medium"
           >
             <span class="image fit"
@@ -174,7 +174,7 @@
           </div>
           <div
             data-aos="flip-left"
-            data-aos-delay="550"
+            data-aos-delay="350"
             class="col-4 col-12-medium"
           >
             <span class="image fit"
@@ -201,17 +201,42 @@
             <h2>Discuss a project or just wanna say hi?</h2>
           </header>
           <p data-aos="zoom-in-up" class="whiten">My inbox is open for all.</p>
-          <ul class="actions special">
-            <li>
-              <a
+          <!--  -->
+          <div id="form">
+            <form
+              action="https://formsubmit.co/mudit.korpaul@gmail.com"
+              method="post"
+              class="cta-inp"
+            >
+              <input type="hidden" name="_subject" value="New submission!" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                class="inp"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Your Mail-ID"
                 data-aos="flip-up"
-                data-aos-delay="350"
-                onclick="clickFun()"
-                class="button whiten"
-                >Leave a Mail</a
-              >
-            </li>
-          </ul>
+                data-aos-delay="450"
+                autocomplete="off"
+                required
+              />
+              <textarea
+                class="inp whiten"
+                type="text"
+                name="content"
+                id="msg"
+                placeholder="Type your message here.."
+                data-aos="flip-up"
+                data-aos-delay="450"
+                rows="5"
+                cols="5"
+              ></textarea>
+              <button type="submit" id="mail-btn" class="whiten">
+                Leave a Mail
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -220,22 +245,30 @@
     <section id="footer">
       <ul class="icons">
         <li>
-          <a href="#" class="icon brands alt fa-twitter"
+          <a
+            href="https://twitter.com/MKorpaul"
+            class="icon brands alt fa-twitter"
             ><span class="label">Twitter</span></a
           >
         </li>
         <li>
-          <a href="#" class="icon brands alt fa-facebook-f"
+          <a
+            href="https://www.facebook.com/mudit.korpaul/"
+            class="icon brands alt fa-facebook-f"
             ><span class="label">Facebook</span></a
           >
         </li>
         <li>
-          <a href="#" class="icon brands alt fa-instagram"
+          <a
+            href="https://www.instagram.com/kp._.mudit/"
+            class="icon brands alt fa-instagram"
             ><span class="label">Instagram</span></a
           >
         </li>
         <li>
-          <a href="#" class="icon brands alt fa-github"
+          <a
+            href="https://github.com/Mudit-Korpaul"
+            class="icon brands alt fa-github"
             ><span class="label">GitHub</span></a
           >
         </li>
@@ -248,7 +281,7 @@
     <!-- Scripts -->
     <script>
       function clickFun() {
-        window.location = "/mail";
+        console.log("Mail Sent!");
       }
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
